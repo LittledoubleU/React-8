@@ -1,0 +1,55 @@
+.loading-page, .loading-page img {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.loading-waifu {
+    width: 15%;
+}
+
+.loading-progress {
+    --primary-color: #FFCAF7;
+    --secondary-color: #9D6BFD;
+    width: 25%;
+    aspect-ratio: 10;
+    background-color: var(--primary-color);
+
+    div {
+        width: 40%;
+        aspect-ratio: 1.75;
+        background: var(--secondary-color);
+        rotate: -45deg;
+        position: absolute;
+        top: 50%;
+        transform: translate(50%);
+    }
+}
+
+.loading-progress::before {
+    --border-radius: 6px;
+    content: "";
+    display: block;
+    background: none;
+    border: var(--border-radius) solid var(--secondary-color);
+    border-radius: 9999px;
+    position: absolute;
+    top: calc(-1*(var(--border-radius))/2);
+    left: calc(-1*(var(--border-radius))/2);
+    right: calc(-1*(var(--border-radius))/2);
+    bottom: calc(-1*(var(--border-radius))/2);
+}
+
+.loading-text {
+    color: #FFCAF7;
+    -webkit-text-stroke: 2px #8c51f9; /* width and color */
+    font-weight: 900;
+    font-size: 2.5vw;
+}
+
+.loading-page > div {
+    gap: 0.75rem;
+}
