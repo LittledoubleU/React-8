@@ -45,9 +45,24 @@
 
 .loading-text {
     color: #FFCAF7;
-    -webkit-text-stroke: 2px #8c51f9; /* width and color */
+    
     font-weight: 900;
-    font-size: 2.5vw;
+    font-size: 5.5vw;
+    font-family: "DynaPuff";
+    /* overflow: hidden; */
+}
+
+.loading-dot {
+    display: inline-block;
+    width: 10%;
+
+    span:nth-child(2) {
+        left: 65%;
+    }
+
+    span:nth-child(3) {
+        left: 135%;
+    }
 }
 
 .loading-page > div {
