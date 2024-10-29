@@ -39,7 +39,7 @@ export default function LoadingPage() {
       
 
     return (
-        <div className="w-screen h-screen z-50 relative loading-page">
+        <div className="w-screen h-screen z-50 absolute loading-page bg-white">
             <div className="absolute left-2/4 top-2/4 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center w-full">
                 <img src="./src/assets/loading/WalkingGirl.gif" alt="Walking girl" className="loading-waifu"/>
                 <div className=' border-4 loading-progress rounded-full overflow-hidden relative'>
@@ -53,7 +53,7 @@ export default function LoadingPage() {
                     />
                     ))}
                 </div>
-                <p className='loading-text relative'>
+                <div className='loading-text relative'>
                     LOADING
                     <div className='loading-dot absolute'>
                     {dotDelay.map((_, index) => (
@@ -69,7 +69,7 @@ export default function LoadingPage() {
                         </motion.span>
                     ))}
                     </div>
-                </p>
+                </div>
             </div>
         </div>
     )

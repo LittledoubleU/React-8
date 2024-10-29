@@ -1,0 +1,59 @@
+.card-list {
+    > div {
+        width: 100%;
+        flex: 1;
+        overflow: hidden;
+        transition: all 2s;
+        opacity: 1;
+    }
+
+    &:hover > div {
+        flex: 0.5;
+        opacity: 0.3;
+    }
+
+    > div:hover {
+        flex: 1.75;
+        opacity: 1;
+    }
+
+    .videoWrapper {
+        position: relative;
+        width: 180vh;
+        min-height: 100vh;
+    }
+
+    video {
+        width: 100%;
+        position: absolute;
+        height: auto;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #hutao {
+        left: -40.5%;
+    }
+
+    #mualani {
+        left: -26%;
+    }
+
+    #navia {
+        left: -40%;
+    }
+
+    #raiden {
+        left: -30.5%;
+    }
+
+    #yaeMiko {
+        left: -12%;
+    }
+
+    .genshin-logo {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

@@ -7,6 +7,10 @@
     -ms-user-select: none;
 }
 
+.loading-page {
+    top: 0%;
+}
+
 .loading-waifu {
     width: 15%;
 }
