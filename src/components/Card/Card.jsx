@@ -35,10 +35,10 @@ export default function Card(props) {
 
                 Your browser does not support the video tag.
                 </video>
-            </div>
-            <div className="card-text absolute w-full">
-                <h1>{charTitle}</h1>
-                <p>{charDescription}</p>
+                <div className="card-text absolute w-full">
+                    <h1>{charTitle}</h1>
+                    <p>{charDescription}</p>
+                </div>
             </div>
         </div>
     )

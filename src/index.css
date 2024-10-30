@@ -9,3 +9,8 @@
     left: 50%;
     top: 50%;
 }
+
+@font-face {
+    font-family: 'GenshinFont'; /*a name to be used later*/
+    src: url('../src/assets/font/Genshin Impact DRIP FONT (1).ttf'); /*URL to font*/
+}

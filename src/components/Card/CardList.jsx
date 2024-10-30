@@ -36,7 +36,10 @@ export default function CardList(props) {
             initial="hidden"
             animate="show"
         >
-            <motion.div className="relative bg-white" variants={childrenCard}>
+            <motion.div 
+                className="relative bg-white" 
+                variants={childrenCard}
+            >
                 <div className="bg">
                     <img src="../src/assets/logo/Genshin-Impact.webp" alt="genshin logo" className="genshin-logo" />
                 </div>
