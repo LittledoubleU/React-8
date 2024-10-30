@@ -4,20 +4,27 @@ import CardList from "./components/Card/CardList";
 
 function App() {
     const [loadingScreen, setLoadingScreen] = useState(true);
+    const [loadedVideos, setLoadedVideos] = useState(0); // track video load for using handleVideoOnLoaded once after reach all card.
 
     function handleVideoOnLoaded() {
-        const loadingTimeout = setTimeout(() => {
-            setLoadingScreen(false);
-        }, 3000);
-
-        // Clean up timeout when the component unmounts
-        return () => clearTimeout(loadingTimeout);
+        setLoadedVideos((prev) => prev + 1);
     }
+
+    useEffect(() => {
+        // If you want to make it dynamic. just use useState() for char.lenght = totalVideo
+        if (loadedVideos === 5) { // Only hide loading screen once all videos are loaded
+            const loadingTimeout = setTimeout(() => {
+                setLoadingScreen(false);
+            }, 3000);
+
+            return () => clearTimeout(loadingTimeout);
+        }
+    }, [loadedVideos]);
     
     return (
-        <div className="relative">
+        <div className="relative w-full h-screen overflow-hidden">
             <main className="bg-black w-screen h-screen z-0">
-                <CardList handleVideoOnLoaded={handleVideoOnLoaded} />
+                <CardList handleVideoOnLoaded={handleVideoOnLoaded} loadingScreen={loadingScreen}/>
             </main>
             {loadingScreen && <LoadingPage /> }
         </div>

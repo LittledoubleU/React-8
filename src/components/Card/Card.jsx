@@ -1,7 +1,7 @@
 import { useRef } from "react"
 
 export default function Card(props) {
-    const {char, handleVideoOnLoaded} = props;
+    const {char, charTitle, charDescription, handleVideoOnLoaded} = props;
     const videoRef = useRef(null);
 
     function handleMouseEnter() {
@@ -35,6 +35,10 @@ export default function Card(props) {
 
                 Your browser does not support the video tag.
                 </video>
+            </div>
+            <div className="card-text absolute w-full">
+                <h1>{charTitle}</h1>
+                <p>{charDescription}</p>
             </div>
         </div>
     )

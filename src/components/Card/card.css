@@ -3,10 +3,11 @@
         width: 100%;
         flex: 1;
         overflow: hidden;
-        transition: all 2s;
+        transition: all 1s;
         opacity: 1;
     }
 
+    /* when hover make all cards opacity = 0.3*/
     &:hover > div {
         flex: 0.5;
         opacity: 0.3;
@@ -55,5 +56,25 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        h1 {
+            font-size: 5vw;
+        }
+    }
+
+    .card-text {
+        padding: 0 2.5%;
+        color: white;
+        opacity: 0;
+        top: 50%;
+        bottom: 0;
+
+        h1 {
+            font-size: 1.75vw;
+        }
+    }
+
+    > div:hover .card-text {
+        opacity: 1;
     }
 }
