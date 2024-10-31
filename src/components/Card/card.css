@@ -41,7 +41,7 @@
     }
 
     #navia {
-        left: -40%;
+        left: -42.5%;
     }
 
     #raiden {
@@ -87,5 +87,166 @@
         opacity: 1;
         transform: translateY(0);
         transition: all 0.5s;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .card-list {
+        .card-text {
+            padding-right: 62.5%;
+        }
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .card-list {
+        .card-text {
+            padding-right: 72.5%;
+        }
+    }
+}
+
+@media all and (max-width: 480px) and (min-width: 375px) {
+    .card-list {
+        rotate: 90deg;
+        width: 100vh;
+        height: 100vw;
+    }
+
+    .loading-waifu {
+        width: 55%;
+    }
+    
+    .loading-progress {
+        width: 65%;
+    }
+    
+    .card-list {
+        .card-text {
+            padding-right: 78%;
+        }
+
+        /*+8%*/
+
+        #hutao {
+            left: -50.5%;
+            top: 62.5%;
+        }
+    
+        #mualani {
+            left: -30%;
+            top: 70%;
+        }
+    
+        #navia {
+            left: -50%;
+            top: 60%;
+        }
+    
+        #raiden {
+            left: -40.5%;
+            top: 62.5%;
+        }
+    
+        #yaeMiko {
+            left: -22%;
+            top: 65.5%;
+        }
+    }
+}
+
+@media all and (max-width: 375px) {
+    .card-list {
+        rotate: 90deg;
+        width: 100vh;
+        height: 100vw;
+    }
+
+    .loading-waifu {
+        width: 55%;
+    }
+    
+    .loading-progress {
+        width: 65%;
+    }
+    
+    .card-list {
+        .card-text {
+            padding-right: 78%;
+        }
+
+        #hutao {
+            left: -50.5%;
+            top: 70.5%;
+        }
+    
+        #mualani {
+            left: -30%;
+            top: 78%;
+        }
+    
+        #navia {
+            left: -50%;
+            top: 68%;
+        }
+    
+        #raiden {
+            left: -40.5%;
+            top: 70.5%;
+        }
+    
+        #yaeMiko {
+            left: -22%;
+            top: 73.5%;
+        }
+    }
+}
+
+@media (orientation: portrait) {
+    .card-list {
+        rotate: 90deg;
+        width: 100vh;
+        height: 100vw;
+    }
+
+    .loading-waifu {
+        width: 55%;
+    }
+    
+    .loading-progress {
+        width: 65%;
+    }
+    
+    .card-list {
+        .card-text {
+            padding-right: 78%;
+        }
+
+        /*+8%*/
+
+        #hutao {
+            left: -50.5%;
+            top: 62.5%;
+        }
+    
+        #mualani {
+            left: -30%;
+            top: 70%;
+        }
+    
+        #navia {
+            left: -50%;
+            top: 60%;
+        }
+    
+        #raiden {
+            left: -40.5%;
+            top: 62.5%;
+        }
+    
+        #yaeMiko {
+            left: -22%;
+            top: 65.5%;
+        }
     }
 }

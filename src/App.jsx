@@ -22,8 +22,8 @@ function App() {
     }, [loadedVideos]);
     
     return (
-        <div className="relative w-full h-screen overflow-hidden">
-            <main className="bg-black w-screen h-screen z-0">
+        <div className="relative w-full h-screen overflow-hidden main-container">
+            <main className="bg-black w-screen z-0">
                 <CardList handleVideoOnLoaded={handleVideoOnLoaded} loadingScreen={loadingScreen}/>
             </main>
             {loadingScreen && <LoadingPage /> }
