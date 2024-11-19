@@ -31,7 +31,7 @@ export default function Card(props) {
                     preload="auto"
                     onLoadedData={handleVideoOnLoaded}
                 >
-                <source src={`/assets/video/${char}.mp4`} type="video/mp4" />
+                <source src={`./assets/video/${char}.mp4`} type="video/mp4" />
 
                 Your browser does not support the video tag.
                 </video>
